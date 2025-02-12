@@ -71,7 +71,6 @@ h5 {
     font-size: 20px;
     font-family: var(--font-famile-addition);
 }
-
 .banner {
     position: relative;
     background: url("images/banner-background.png") no-repeat center
@@ -80,8 +79,8 @@ h5 {
     width: 100%;
     min-height: 110vh;
     justify-items: center;
+    align-items: center;
 }
-
 .banner-body {
     width: 100%;
     height: 100%;
@@ -101,22 +100,18 @@ h5 {
     height: 200px;
     margin-block: 32px;
 }
-
 .banner-title {
     line-height: 1.1;
 }
-
 .banner-text {
     line-height: 1.2;
     margin-top: 20px;
 }
-
 .about-us-background {
     min-width: 100%;
     background-color: var(--color-light-grey);
     background-image: linear-gradient(white, var(--color-light-grey));
 }
-
 .about-us {
     position: relative;
     width: 100%;
@@ -125,6 +120,8 @@ h5 {
     max-width: calc(var(--container-width) + var(--container-padding-x));
     margin-inline: auto;
     padding-inline: var(--container-padding-x);
+    z-index: 200;
+    margin-top: 100px;
 }
 .about-us-title {
     margin-top: 20px;
@@ -159,20 +156,221 @@ h5 {
         center/cover;
     color: var(--color-white);
     width: 100%;
-    min-height: 100vh;
+    min-height: 1380px;
     justify-items: center;
+    margin-top: -300px;
+    z-index: 100;
 }
-
 .expedition-leaders-body {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     text-align: center;
     color: var(--color-white);
     max-width: calc(var(--container-width) + var(--container-padding-x));
     margin-inline: auto;
     padding-inline: var(--container-padding-x);
+}
+.expedition-leaders-logo {
+    padding-top: 600px;
+}
+.flex-section {
+    position: relative;
+    background: url("images/grid-section-background.png") no-repeat center
+        center/cover;
+    color: var(--color-white);
+    width: 100%;
+    min-height: 1092px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.flex-section-container {
+    max-width: calc(var(--container-width) + var(--container-padding-x));
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+    min-height: 740px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    translate: 0 -100px;
+    z-index: 200;
+    position: relative;
+}
+.flex-section-container img {
+    margin-bottom: 60px;
+    max-width: 367px;
+    max-height: 352px;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.middle-image {
+    padding-top: 100px;
+    width: 350px;
+    height: 400px;
+    margin-inline: 0 20px;
+}
+.flex-section-container-button {
+    min-width: auto;
+    padding: 10px 40px;
+    min-height: 40px;
+    background-color: var(--color-dark-gray);
+    color: white;
+    font-family: var(--font-family-base);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.flex-section-container p {
+    font-size: 14;
+    padding: 10px;
+}
+.our-leaders {
+    position: relative;
+    top: -40px;
+    background: url("images/white-mount.png") no-repeat center center/cover;
+    color: var(--color-white);
+    min-width: 100%;
+    min-height: 840px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.our-leaders-flex-container {
+    max-width: calc(var(--container-width) + var(--container-padding-x));
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    translate: 0 -100px;
+    z-index: 200;
+    position: relative;
+}
+.our-leaders-flex-container img {
+    width: auto;
+    height: 440px;
+    width: auto;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.our-leaders-flex-container-middle {
+    margin-inline: 20px;
+    object-position: 65.58% 50%;
+    background-position: 65.58% 50%;
+}
+.our-leaders-flex-container-first {
+    object-position: 39.51% 50%;
+    background-position: 39.51% 50%;
+}
+.our-leaders-flex-container-last {
+    object-position: 13.44% 50%;
+    background-position: 13.44% 50%;
+}
+.our-leaders-text {
+    width: 100%;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+    max-width: calc(930px + var(--container-padding-x));
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+    background-color: rgb(63, 71, 89, 0.5);
+    margin-top: -25px;
+    padding-inline: 16px;
+}
+.our-leaders-text h2 {
+    margin-top: -40px;
+}
+.our-leaders-text p:nth-child(2) {
+    margin-top: -25px;
+}
+.flex-section-landscape {
+    max-width: 100%;
+    margin-inline: auto;
+    padding-inline: 0;
+    display: flex;
+    flex-direction: row;
+    margin-top: -40px;
+}
+.flex-section-landscape img {
+    min-width: 308px;
+    height: 404px;
+    width: auto;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer {
+    position: relative;
+    background: url("images/footer-background.png") no-repeat center
+        center/cover;
+    color: var(--color-white);
+    min-width: 100%;
+    min-height: 980px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+.footer h2 {
+    padding-top: 100px;
+}
+.footer-flex-container {
+    max-width: calc(var(--container-width) + var(--container-padding-x));
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+.footer-flex-container-text {
+    max-width: 50%;
+}
+.footer-flex-container-input {
+    max-width: 50%;
+}
+input {
+    min-width: 500px;
+    display: block;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid var(--color-white);
+    border-radius: 3px;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    background-color: transparent;
+    color: inherit;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.bigger-input {
+    min-height: 124px;
+}
+.black-line {
+    height: 132px;
+    transform-origin: center bottom 0;
+    width: 6px;
+    background-color: black;
+    translate: 0 250px;
 }
